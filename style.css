@@ -5,7 +5,8 @@
 html {
     scroll-behavior: smooth;
 }
-
+/* tira as margens
+   define fonte cor e fundo do site*/
 body {
     margin: 0;
     font-family: 'fredoka', system-ui, arial, sans-serif; 
@@ -18,6 +19,7 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+/* faz a topbar sobrepor outros elementos ao rolar a pagina, faz ela sempre ficar no topo, tem fundo azul escuro e borda cinza em baixo*/
 .topbar {
     position: sticky;
     top: 0;
@@ -27,6 +29,7 @@ body {
 
 }
 
+/* limita a largura maxima da tela e centraliza o conteudo*/
 .container {
     width: min(1100px, 92%);
     margin: 0 auto;
@@ -34,12 +37,14 @@ body {
 
 }
 
+/* usa display flex para alinhar itens na horizontal. E centralizados verticalmente com espaço entre eles*/
 .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/* texto em negrito, tira o sublinhado de links e aumenta o tamanho das fontes*/
 .logo {
     font-weight: 800;
     text-decoration: none;
@@ -48,6 +53,7 @@ body {
     padding: 0.8rem 0;
 }
 
+/*links do menu sem sublinhado, deixa os links em cinza claro, com a fonte mais grossa, com tamanho médio, espaço interno e bordas arredondadas.*/
 nav a {
     text-decoration: none;
     font-weight: 600;
@@ -63,6 +69,7 @@ nav a:hover {
     color: gray;
 }
 
+/* caixa da imagem: fundo branco, bordas arredondadas e cinza, com padding e margem superior. */
 .hero-img {
     max-width: 100%;
     background: #fff;
@@ -71,13 +78,14 @@ nav a:hover {
     padding: 0.6rem;
     margin-top: 20%;
 }
-
+ /* imagem com largura fixa, exibida em bloco com os cantos arredondados */
 .hero-img img {
     width: 40rem;
     display: block;
     border-radius: 0.5rem;
 }
 
+/* centraliza os itens, permite quebrar linha e cria espaço entre eles. */
 .hero-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -86,11 +94,13 @@ nav a:hover {
     justify-content: center;
 }
 
+/* limita a largura do texto a 45% do espaço disponível. */
 .hero-text {
     max-width: 45%;
 
 }
 
+/* define a cor de fundo e a cor das letras, alinha os textos no centro, e adiciona um espaçamento igual entre os itens. */
 footer {
     background-color: #080129;
     color: white;
@@ -106,6 +116,7 @@ footer a {
     background-color: #fff;
 }
 
+/* permite que quebre as linhas, fiquem centraliados e com espaço entre si*/
 .menu-grid {
     display: flex;
     flex-wrap: wrap;
@@ -114,6 +125,7 @@ footer a {
     justify-content: center;
 }
 
+/* adiciona largura base de 360px, ajusta o tamanho conforme o espaço, tem fundo cinza bem claro, borda e cantos arredondados e texto preto.*/
 .item {
     flex-basis: 360px;
     flex-grow: 1;
@@ -125,12 +137,14 @@ footer a {
     color: black;
 }
 
+/* "caixa" de imagem com margem na parte inferior, cantos arredondados e oculta as partes que ultrapassam o tamanho da tela utilizada. */
 .thumb {
     margin-bottom: 10px;
     border-radius: 10px;
     overflow: hidden;
 }
 
+/* imagem ocupa 100% da largura, é exibida em bloco, tem os cantos arredondados e tem um efeito de animação de 0.4 segundos */
 .thumb img {
     width: 100%;
     display: block;
@@ -138,13 +152,15 @@ footer a {
     transition: transform 0.4s ease;
 }
 
+/* gera uma animação de um pequeno zoom enquanto a imagem rotaciona um pouco*/
 .thumb img:hover {
     transform: scale(1.08) rotate(-1deg);
 }
 
+
+/* estiliza o mapa do google maps, que contem cantos arredondados,fundo branco, borda escura de 3px, e padding interno para afastar o mapa da borda*/
 .mapa iframe {
     
-    border: 1px solid #e9e9e9;
     border-radius: 10px;
     background: #fff;
     border: 3px solid #080129;
@@ -152,6 +168,7 @@ footer a {
     padding: 0.6rem;
 }
 
+/* adapta o site para telas de ate 870px de largura*/
 @media (max-width: 870px) {
 
     section {
